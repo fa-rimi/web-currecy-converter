@@ -5,39 +5,53 @@
     --font-style-rw: 'Ysabeau SC', sans-serif;
 
     /*font weights*/
-    --font-weight-ex-thin: 1; /*font weight 1 for SC*/
-    --font-weight-thin-sc: 100; /*font weight thin 100 SC*/
-    --font-weight-thin-rw: 200; /*font weight extra light for RW*/
-    --font-weight-bold: 600; /*font weight bold for SC & RW*/
+    --font-weight-ex-thin: 1;
+    /*font weight 1 for SC*/
+    --font-weight-thin-sc: 100;
+    /*font weight thin 100 SC*/
+    --font-weight-thin-rw: 200;
+    /*font weight extra light for RW*/
+    --font-weight-bold: 600;
+    /*font weight bold for SC & RW*/
 
     /* background colors */
     --main-bg-color: #1B6B93;
-    --placeholder-color: black; /*placeholder color just to see if the styling is working*/
+    --placeholder-color: black;
+    /*placeholder color just to see if the styling is working*/
     --text-color-1: white;
     /* --text-color-2: ; */
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0 auto;
 }
 
 body {
+    width: 100%;
     overflow: hidden;
     background-color: white;
 }
 
+/* start of mini navbar */
 .mini-nav {
     height: 25px;
 }
 
-nav .container{
-    width: 100%;
+/* end of mini navbar */
+
+
+/* start of main navbar */
+nav .container {
+    /* width: 100%; */
     height: 80px;
-    display: flex;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
 
     background-color: var(--main-bg-color);
 }
@@ -62,6 +76,25 @@ nav .navbar-brand img {
     margin-right: 10px;
 }
 
+button {
+    /* width: 35px;
+    height: 35px;
+    margin-right: 90px;
+
+    font-family: Flaticon; */
+}
+
+.fi {
+    width: 35px;
+    height: 35px;
+}
+
+.dropdown-menu {
+    height: 30px;
+}
+
+/* end of main navbar */
+
 main {
     height: 700px;
     display: flex;
@@ -72,14 +105,37 @@ main .content-container {
     height: 650px;
     width: 1441px;
     margin: 30px;
+}
 
-    background-color: var(--placeholder-color);
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content .card {
+    border: 1px solid black;
 }
 
 .currency-converter {
-
+    width: 750px;
+    height: 650px;
 }
 
 .value-container {
+    width: 500px;
+    height: 650px;
+}
 
+footer span {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.social-icons {
+    display: block;
+    width: 20px;
 }

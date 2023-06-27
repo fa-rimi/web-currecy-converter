@@ -107,8 +107,9 @@ button img {
     margin-right: 60px;
 }
 
-.dropdown-menu {
+.dropdown-menu .show {
     position: relative;
+    margin-top: 20px;
 }
 
 /* end of main navbar */

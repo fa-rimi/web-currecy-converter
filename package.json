@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@flaticon/flaticon-uicons": "^2.2.0",
     "bootstrap": "^5.3.0"
   }
 }

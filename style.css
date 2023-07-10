@@ -20,7 +20,11 @@
     /*placeholder color just to see if the styling is working*/
     --text-color-1: white;
     /* --text-color-2: ; */
+
+    /* light border */
+    --gray-border: 0.5px solid lightgray ;
 }
+
 
 html,
 body {
@@ -35,6 +39,15 @@ body {
     background-color: white;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* start of mini navbar */
 .mini-nav {
     height: 25px;
@@ -42,6 +55,9 @@ body {
 
 /* end of mini navbar */
 
+.navbar {
+    padding: 0 !important;
+}
 
 /* start of main navbar */
 nav .container {
@@ -122,8 +138,8 @@ main {
 
 main .content-container {
     height: 650px;
-    width: 1441px;
-    margin: 30px;
+    /* width: 1441px; */
+    margin: 20px;
 }
 
 .content {
@@ -132,29 +148,46 @@ main .content-container {
     justify-content: space-around;
 }
 
-.content .card {
+/* .content .card {
     border: 1px solid black;
-}
+} */
 
 .currency-converter {
     width: 750px;
-    height: 650px;
+    height: 590px;
+    margin: 40px 20px 40px 60px;
+
+    border: var(--gray-border);
+
 }
 
 .value-container {
     width: 500px;
-    height: 650px;
+    height: 590px;
+    margin: 40px 20px 40px 60px;
+
+    border: var(--gray-border);
 }
 
-footer span {
-    height: 40px;
+footer span { 
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: row;
 }
 
-.social-icons {
-    display: block;
+footer .block {
+    padding: 0 8px 0 5px;
+}
+
+.links ul {
+    display: flex;
+    justify-content: center;
+    /* border: 0 1px 0 1px;
+    border-style: 1px solid black; */
+}
+
+.links img {
+    height: 20px;
     width: 20px;
+    margin-right: 15px;
 }

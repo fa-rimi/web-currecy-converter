@@ -14,7 +14,6 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&family=Ysabeau+SC:wght@1;100;600&display=swap"
     rel="stylesheet">
 
-  <script defer src="script.js"></script>
   <!-- Integrate Bootstrap -->
   <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -24,6 +23,10 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
+
+  <!-- script -->
+  <script defer src="script.js"></script>
+
 </head>
 
 <body>
@@ -33,7 +36,7 @@
     <!-- start of navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#"> <img src="images/placeholders/logo-placeholder-image.png" alt=""
+        <a class="navbar-brand" href="#"> <img src="images/logo-placeholder-image.png" alt=""
             class="logo">Currency Converter</a>
         <!-- <div class="globe"> -->
         <div class="dropdown">
@@ -63,7 +66,20 @@
       <div class="content">
         <div> <!-- class="card" -->
           <div class="shadow p-5 bg-body-tertiary rounded currency-converter">
-            
+            <div class="enter">
+              <label for="amount">From</label>
+              <input type="number" id="amount" value="100" aria-label="Enter Amount">
+              <div class="currency_opt">
+                <!-- dropdown for currency option 1 -->
+                <select id="convert-from" aria-label="from"></select>
+                <!-- dropdown for currency option 2 -->
+                <select id="convert-to" aria-label="to"></select>
+              </div>
+              <button type="button" class="btn btn-primary">Convert</button>
+            </div>
+            <div class="result">
+
+            </div>
           </div>
         </div>
         <div> <!-- class="card" -->
@@ -81,8 +97,8 @@
         <ul>
           <!-- start of social media icons -->
           <li class="icons"><a href="#" target="_blank" rel="">
-            <img src="icons/social.png" alt="github.com"></a></li>
-            <li class="icons"><a href="#" target="_blank" rel="">
+              <img src="icons/social.png" alt="github.com"></a></li>
+          <li class="icons"><a href="#" target="_blank" rel="">
               <img src="icons/figma (1).png" alt="figma.com"></a></li>
         </ul>
       </div>

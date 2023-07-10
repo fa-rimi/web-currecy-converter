@@ -23,6 +23,12 @@
 
     /* light border */
     --gray-border: 0.5px solid lightgray ;
+
+    /* buttons */
+    --static-button-color: #1B6B93;
+    --button-on-click-color: ;
+    --success-button-color: ;
+    --button-failed-color: ;
 }
 
 

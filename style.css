@@ -22,7 +22,7 @@
     /* --text-color-2: ; */
 
     /* light border */
-    --gray-border: 0.5px solid lightgray ;
+    --gray-border: 0.5px solid lightgray;
 
     /* buttons */
     --static-button-color: #1B6B93;
@@ -30,7 +30,6 @@
     --success-button-color: ;
     --button-failed-color: ;
 }
-
 
 html,
 body {
@@ -154,19 +153,40 @@ main .content-container {
     justify-content: space-around;
 }
 
-/* .content .card {
-    border: 1px solid black;
-} */
-
+/* start of currency converter section */
 .currency-converter {
     width: 750px;
     height: 590px;
     margin: 40px 20px 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     border: var(--gray-border);
+}
+
+input {
+    width: 450px;
+    height: 50px;
+    padding-left: 15px;
 
 }
 
+.enter button {
+    width: -moz-fit-content;
+    width: fit-content;
+
+    padding: 6px !important;
+
+    border-radius: var(--bs-border-radius);
+    background-color: var(--static-button-color);
+    color: var(--text-color-1);
+
+    /* font-family: var(--font-style-ysc); */
+}
+/* end of currency converter section */
+
+/* start of currency exchange rate section */
 .value-container {
     width: 500px;
     height: 590px;
@@ -174,8 +194,8 @@ main .content-container {
 
     border: var(--gray-border);
 }
-
-footer span { 
+/* end of currency exchange rate section */
+footer span {
     width: 100%;
     display: flex;
     justify-content: center;
